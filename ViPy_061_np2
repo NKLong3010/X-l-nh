@@ -1,0 +1,18 @@
+import numpy as np
+
+# Tạo numpy array 2D theo yêu cầu
+def create_custom_array():
+    # Tạo phần đầu của mảng bằng np.arange và reshape
+    part1 = np.arange(10).reshape(2, 5)
+    
+    # Tạo phần thứ hai của mảng bằng np.ones
+    part2 = np.ones((2, 5), dtype=int)
+    
+    # Kết hợp hai phần lại với nhau bằng np.vstack
+    result = np.vstack((part1, part2))
+    
+    return result
+
+# Gọi hàm và in kết quả
+custom_array = create_custom_array()
+print(custom_array)
