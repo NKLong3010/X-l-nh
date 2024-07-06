@@ -1,0 +1,12 @@
+import numpy as np
+
+# Tạo numpy array
+arr = np.arange(9).reshape(3, 3)
+print("Original array:")
+print(arr)
+
+# Hoán đổi cột 0 và cột 1
+arr[:, [0, 1]] = arr[:, [1, 0]]
+
+print("\nArray after swapping columns 0 and 1:")
+print(arr)
