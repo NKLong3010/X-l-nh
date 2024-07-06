@@ -1,0 +1,10 @@
+import numpy as np
+
+# Định nghĩa mảng a
+a = np.array([2, 6, 1, 9, 10, 3, 27])
+
+# Lọc các phần tử nằm trong khoảng từ 5 đến 10
+result = a[(a >= 5) & (a <= 10)]
+
+# In kết quả ra màn hình
+print(result)
